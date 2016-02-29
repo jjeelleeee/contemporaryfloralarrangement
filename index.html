@@ -54,7 +54,7 @@
 		var textVisible = function (){
 			t = document.body.getBoundingClientRect().top;
 
-			if(t-delta > 0)
+			if(t-delta > 0 || t > -10)
 				nfo.style.opacity = 1;
 			else
 				nfo.style.opacity = 0;
